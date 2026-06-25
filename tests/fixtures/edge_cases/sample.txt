@@ -1,0 +1,18 @@
+# Edge case samples for scanner robustness tests
+
+
+
+
+A very long line follows with random ASCII characters that should not trigger high-confidence detections: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+
+Unicode: 日本語テスト — こんにちは世界 — émoji test: 🔑 🛡️ 🔒
+
+Mixed: config_value = "normal-value-123" and another = "also-normal"
+
+Binary-looking: \x00\x01\x02\xff\xfe encoded as escaped chars
+
+Numeric sequences (not SSN): 999 888 777 and 123 456 not a ssn
+
+Partial email: user@ and @domain.com and user@
+
+Short strings: ab cd ef gh ij kl mn op

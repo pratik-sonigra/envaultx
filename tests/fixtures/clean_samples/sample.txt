@@ -1,0 +1,28 @@
+# Application configuration — no secrets here
+
+[server]
+host = "0.0.0.0"
+port = 8080
+debug = false
+log_level = "INFO"
+
+[database]
+host = "db.example.com"
+port = 5432
+name = "myapp_prod"
+pool_size = 10
+
+[cache]
+host = "cache.example.com"
+port = 6379
+ttl = 3600
+
+[urls]
+homepage = "https://www.example.com"
+docs = "https://docs.example.com/api/v1"
+status = "https://status.example.com"
+
+[logging]
+format = "json"
+output = "stdout"
+max_size_mb = 100

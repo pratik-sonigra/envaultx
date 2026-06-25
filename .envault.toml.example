@@ -1,0 +1,18 @@
+[envault]
+# Minimum confidence threshold for detections (0.0 to 1.0)
+threshold = 0.5
+
+# Only scan for specific categories (empty = all categories)
+# categories = ["OPENAI_KEY", "EMAIL", "SSN"]
+
+# Exclude specific categories from scanning
+# exclude_categories = ["IP_ADDRESS_PRIVATE", "HOSTNAME_INTERNAL"]
+
+# Enable NLP-based PII detection (requires: pip install envault[nlp])
+nlp = false
+
+# Default output format for CLI: "text", "json", or "markdown"
+default_format = "text"
+
+# Directory to store vault files (empty = current directory)
+vault_dir = ""

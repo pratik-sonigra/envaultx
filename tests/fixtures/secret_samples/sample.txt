@@ -1,0 +1,18 @@
+# Sample file containing secrets — used for scanner tests
+# Line positions of secrets:
+#   Line 7:  OpenAI API key
+#   Line 10: PostgreSQL connection string (contains user + password)
+#   Line 13: Email address
+#   Line 16: Stripe test secret key
+
+[api]
+openai_api_key = "sk-abcdefghijklmnopqrstuvwxyz1234567890abcde"
+
+[database]
+url = "postgres://dbadmin:SuperSecret99!@db.prod.example.com:5432/appdb"
+
+[contact]
+support_email = "admin@company-internal.com"
+
+[payments]
+stripe_secret = "sk_test_abcdefghijklmnopqrstuvwxyz123456"
