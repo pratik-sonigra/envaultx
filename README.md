@@ -61,9 +61,9 @@ pip install "envaultx[all]"
 ### Python library
 
 ```python
-from envaultx import envaultx
+from envaultx import Envault
 
-ev = envaultx()
+ev = Envault()
 
 # Inspect what would be redacted — without modifying anything
 result = ev.scan("My key is sk-proj-abc123XYZdef456GHI789jkl012MN")
